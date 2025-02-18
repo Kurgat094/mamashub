@@ -28,3 +28,9 @@ data class QuestionnaireDetails(
     val detailAnswer: String,
 )
 
+data class Milestone(
+    val id: String,
+    val visit: String,
+    val age: String,
+    val time: String
+)

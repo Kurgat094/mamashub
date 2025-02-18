@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.kabarak.kabarakmhis.R
 import com.kabarak.kabarakmhis.fhir.FhirApplication
 import com.kabarak.kabarakmhis.helperclass.FormatterClass
-import com.kabarak.kabarakmhis.pnc.data_class.Milestone
 import com.kabarak.kabarakmhis.fhir.viewmodels.PatientDetailsViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -29,6 +28,20 @@ import com.google.android.fhir.FhirEngine
 import com.kabarak.kabarakmhis.network_request.requests.RetrofitCallsFhir
 import kotlinx.android.synthetic.main.activity_milestone_view.*
 import org.hl7.fhir.r4.model.QuestionnaireResponse
+
+import androidx.lifecycle.lifecycleScope
+import com.kabarak.kabarakmhis.pnc.data_class.Milestone
+import com.kabarak.kabarakmhis.pnc.milestone.MilestoneView
+import com.kabarak.kabarakmhis.pnc.milestone.MilestoneEdit
+import com.kabarak.kabarakmhis.pnc.milestone.MilestoneDetails
+import com.kabarak.kabarakmhis.pnc.milestone.MilestoneAdapter
+import kotlinx.android.synthetic.main.activity_milestone_view.btnAdd
+import kotlinx.android.synthetic.main.activity_milestone_view.tvANCID
+import kotlinx.android.synthetic.main.activity_milestone_view.tvAge
+import kotlinx.android.synthetic.main.activity_milestone_view.tvName
+
+import kotlinx.coroutines.launch
+
 
 class MilestoneView : AppCompatActivity() {
 
