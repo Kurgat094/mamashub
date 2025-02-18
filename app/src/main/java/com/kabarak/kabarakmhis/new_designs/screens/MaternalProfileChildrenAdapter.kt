@@ -30,6 +30,7 @@ import com.kabarak.kabarakmhis.new_designs.weight_monitoring.WeightMonitoringCha
 import com.kabarak.kabarakmhis.pnc.ChildBirthView
 import com.kabarak.kabarakmhis.pnc.ChildViewActivity
 import com.kabarak.kabarakmhis.pnc.child_civil_registration.ChildCivilRegistrationView
+import com.kabarak.kabarakmhis.pnc.familyplanning.FamilyPlanningView
 
 
 class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternalProfileChild>,
@@ -88,7 +89,7 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 // Reproductive Organs Cancer Screening
                 8.3 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Family Planning
-                8.4 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.4 -> { context.startActivity(Intent(context, FamilyPlanningView::class.java))}
                 // Postnatal Care - Mother
                 8.5 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Postnatal Care - Baby

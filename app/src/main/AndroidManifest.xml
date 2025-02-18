@@ -18,6 +18,27 @@
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustPan"
         tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".pnc.familyplannig.FamilyPlanningDetailsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.familyplannig.FamilyPlannigEdit"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.familyplanning.FamilyPlanningDetails"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.familyplanning.FamilyPlanningView"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.familyplannig.FamilyPlanningAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.familyplannig.FamilyPlannigAdd"
+            android:exported="false" />
+
+
         <activity
             android:name=".pnc.ChildViewActivity"
             android:exported="false" />

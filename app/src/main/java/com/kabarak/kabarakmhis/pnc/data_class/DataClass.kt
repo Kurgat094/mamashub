@@ -34,3 +34,12 @@ data class Milestone(
     val age: String,
     val time: String
 )
+
+data class FamilyPlanning(
+    val id: String,
+    val date: String,
+    val method: String,
+    val weight: String,
+    val bloodPressure: String,
+    val remarks: String
+)
